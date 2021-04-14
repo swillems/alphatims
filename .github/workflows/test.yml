@@ -21,3 +21,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Conda info
         uses: ./.github/workflows/actions/conda_info
+      - name: Pipper
+        uses: ./.github/workflows/actions/pip_install
