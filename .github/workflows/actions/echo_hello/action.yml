@@ -1,5 +1,7 @@
-name: Print hello
+name: 'Hello World'
+description: 'Greet someone'
 runs:
-  with:
-    shell: bash -l {0}
-    run: echo "hello"
+  using: "composite"
+  steps:
+    - run: echo "Hello"
+      shell: bash
