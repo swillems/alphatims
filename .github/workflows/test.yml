@@ -4,7 +4,7 @@ on:
 name: Test workflow
 
 jobs:
-  Test workflow:
+  Test_workflow:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
