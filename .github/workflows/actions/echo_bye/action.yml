@@ -1,6 +1,6 @@
-name: 'Hello World'
+name: 'Bye World'
 runs:
   using: "composite"
   steps:
-    - run: echo "Hello"
+    - run: echo "Bye"
       shell: bash

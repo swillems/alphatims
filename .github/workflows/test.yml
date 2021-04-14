@@ -9,7 +9,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - uses: ./.github/workflows/actions/echo_hello
-      - uses: ./.github/workflows/actions/echo_bye.yml
-      - uses: ./.github/workflows/actions/conda_setup.yml
-      - uses: ./.github/workflows/actions/conda_info.yml
+      - name: Hello
+        uses: ./.github/workflows/actions/echo_hello
+      - name: Bye
+        uses: ./.github/workflows/actions/echo_bye
+      - name: Conda setup
+        uses: ./.github/workflows/actions/conda_setup
+      - name: Conda info
+        uses: ./.github/workflows/actions/conda_info
